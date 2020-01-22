@@ -1,0 +1,8 @@
+.FlickrPhotoset {
+  li {
+    list-style: none;
+    &:not(:first-child) {
+      display: none;
+    }
+  }
+}
