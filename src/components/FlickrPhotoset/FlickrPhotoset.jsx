@@ -1,5 +1,7 @@
 import React from 'react';
 import './FlickrPhotoset.scss';
+import './../FlickGetInfo/FlickGetInfo';
+import FlickGetInfo from './../FlickGetInfo/FlickGetInfo';
 
 class FlickrPhotoset extends React.Component {
   constructor(props) {
@@ -8,15 +10,17 @@ class FlickrPhotoset extends React.Component {
       error: null,
       isLoaded: false,
       photoset_title: null,
+      user_id: null,
+      api_key: null,
       items: []
     }
   }
 
   componentDidMount() {
-    const api_key = 'ca88703a9cf7d3f3d78b90306a3a80c5';
+    const api_key = this.props.api_key;
     const api_url = 'https://api.flickr.com/services/rest';
     const method = 'flickr.photosets.getPhotos';
-    const user_id = '11413095@N00';
+    const user_id = this.props.user_id;
     const photoset_id = this.props.photoset_id;
     const format = 'json';
     const nojsoncallback = 1;
@@ -62,11 +66,10 @@ class FlickrPhotoset extends React.Component {
         <div className="FlickrPhotoset">
           <h3>{photoset_title}</h3>
           <ul>
-            {items.map(item => (
+            {items.slice(0, this.props.limit).map((item, i) => (
               <li key={item.id}>
-                {item.title}
-                <br />
                 <img src={`https://farm${item.farm}.staticflickr.com/${item.server}/${item.id}_${item.secret}.jpg`} alt="" />
+                <FlickGetInfo photo_id={item.id} src={`https://farm${item.farm}.staticflickr.com/${item.server}/${item.id}_${item.secret}.jpg`} title={item.title}></FlickGetInfo>
               </li>
             ))}
           </ul>
