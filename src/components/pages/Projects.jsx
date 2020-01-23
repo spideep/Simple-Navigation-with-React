@@ -1,10 +1,11 @@
 import React from 'react';
+import Gallery from './../Gallery/Gallery';
 
 const Projects = () => {
   return (
     <div>
       <h1>Projects</h1>
-      <p>Projects page body content</p>
+      <Gallery></Gallery>
     </div>
   );
 }
