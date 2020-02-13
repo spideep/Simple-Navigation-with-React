@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Simple-Navigation-with-React/static/css/main.7dca701f.chunk.css",
+    "main.js": "/Simple-Navigation-with-React/static/js/main.2ad583e7.chunk.js",
+    "main.js.map": "/Simple-Navigation-with-React/static/js/main.2ad583e7.chunk.js.map",
+    "runtime-main.js": "/Simple-Navigation-with-React/static/js/runtime-main.ec66716f.js",
+    "runtime-main.js.map": "/Simple-Navigation-with-React/static/js/runtime-main.ec66716f.js.map",
+    "static/js/2.562d7362.chunk.js": "/Simple-Navigation-with-React/static/js/2.562d7362.chunk.js",
+    "static/js/2.562d7362.chunk.js.map": "/Simple-Navigation-with-React/static/js/2.562d7362.chunk.js.map",
+    "index.html": "/Simple-Navigation-with-React/index.html",
+    "precache-manifest.bb591e658bc9e6b8ca8c7f2bd25fe2f7.js": "/Simple-Navigation-with-React/precache-manifest.bb591e658bc9e6b8ca8c7f2bd25fe2f7.js",
+    "service-worker.js": "/Simple-Navigation-with-React/service-worker.js",
+    "static/css/main.7dca701f.chunk.css.map": "/Simple-Navigation-with-React/static/css/main.7dca701f.chunk.css.map",
+    "static/js/2.562d7362.chunk.js.LICENSE": "/Simple-Navigation-with-React/static/js/2.562d7362.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ec66716f.js",
+    "static/js/2.562d7362.chunk.js",
+    "static/css/main.7dca701f.chunk.css",
+    "static/js/main.2ad583e7.chunk.js"
+  ]
+}
