@@ -1,13 +1,19 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faGithub, faBitbucket, faFlickr, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import {
+  faGithub,
+  faBitbucket,
+  faFlickr,
+  faLinkedin,
+  faWhatsapp
+} from '@fortawesome/free-brands-svg-icons';
 
 const About = () => {
   return (
     <div>
       <div className="profile_picture">
-        <img alt="Alexis Rengifo picture" src="https://avatars1.githubusercontent.com/u/1041298?s=460&v=4" />
+        <img alt="Alexis Rengifo" src="https://avatars1.githubusercontent.com/u/1041298?s=460&v=4" />
       </div>
       <h1>About</h1>
       <p>About page body content</p>
@@ -31,9 +37,7 @@ const About = () => {
       <a href="mailto:alexisrengifo@gmail.com">
         <FontAwesomeIcon icon={faEnvelope} /> alexisrengifo@gmail.com
       </a>
-
     </div>
-
   );
 }
 

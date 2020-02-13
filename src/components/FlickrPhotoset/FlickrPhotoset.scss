@@ -12,6 +12,7 @@
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   li {
@@ -21,18 +22,16 @@
     align-content: baseline;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 
     .item-label {
       flex: 1 1 auto;
-      position: absolute;
       background: rgba(0, 0, 0, 0.5);
       color: white;
       padding: 5px 10px;
       font-size: 11px;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 0;
-      width: 80%;
+      display: block;
+      width: 100%;
     }
 
     width: 33%;

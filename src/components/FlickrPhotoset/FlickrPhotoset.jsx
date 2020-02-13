@@ -68,7 +68,6 @@ class FlickrPhotoset extends React.Component {
           <ul>
             {items.slice(0, this.props.limit).map((item, i) => (
               <li key={item.id}>
-                <img src={`https://farm${item.farm}.staticflickr.com/${item.server}/${item.id}_${item.secret}.jpg`} alt="" />
                 <FlickGetInfo photo_id={item.id} src={`https://farm${item.farm}.staticflickr.com/${item.server}/${item.id}_${item.secret}.jpg`} title={item.title}></FlickGetInfo>
               </li>
             ))}
